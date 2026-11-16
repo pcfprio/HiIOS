@@ -5,10 +5,10 @@ Pod::Spec.new do |spec|
   spec.description = <<-DESC
     HiIOSCore provides reusable iOS platform utilities while HiIOSBase owns language-level contracts.
   DESC
-  spec.homepage = 'https://github.com/tospery/HiIOS'
+  spec.homepage = 'https://github.com/pcfprio/HiIOS'
   spec.license = { :type => 'MIT', :file => 'LICENSE' }
   spec.author = { 'YangJianxiang' => 'tospery@gmail.com' }
-  spec.source = { :git => 'https://github.com/tospery/HiIOS.git', :tag => spec.version.to_s }
+  spec.source = { :git => 'https://github.com/pcfprio/HiIOS.git', :tag => spec.version.to_s }
   spec.ios.deployment_target = '17.0'
   spec.swift_version = '6.0'
   spec.source_files = 'Sources/HiIOSCore/**/*.swift'

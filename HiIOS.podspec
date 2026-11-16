@@ -3,10 +3,10 @@ Pod::Spec.new do |spec|
   spec.version = '4.0.0-alpha.1'
   spec.summary = 'Convenient dependency entry for HiIOS modules.'
   spec.description = 'Select independently importable HiIOS modules with CocoaPods.'
-  spec.homepage = 'https://github.com/tospery/HiIOS'
+  spec.homepage = 'https://github.com/pcfprio/HiIOS'
   spec.license = { :type => 'MIT', :file => 'LICENSE' }
   spec.author = { 'YangJianxiang' => 'tospery@gmail.com' }
-  spec.source = { :git => 'https://github.com/tospery/HiIOS.git', :tag => spec.version.to_s }
+  spec.source = { :git => 'https://github.com/pcfprio/HiIOS.git', :tag => spec.version.to_s }
   spec.ios.deployment_target = '17.0'
   spec.swift_version = '6.0'
   spec.default_subspecs = 'Core', 'NetCombine', 'NavCombine', 'Store', 'SuiteCore', 'Symbols'
