@@ -16,3 +16,17 @@ HiIOS（专名“HiIOS 效率库”，规则与文档叙述使用该专名，仓
 消费项目选择 SwiftPM local package 的同级源码检出时，必须遵守 [`docs/engineering/sibling-source-dependency.md`](docs/engineering/sibling-source-dependency.md) 的版本锁和 Git 对齐门禁，并将其接入实际 Verification、CI 与 Archive/Release 入口。本库不规定消费项目的锁文件名、scheme 或签名配置。
 
 GitHub Trending 的独立限制见 [`docs/engineering/gh-trending.md`](docs/engineering/gh-trending.md)。
+
+## Agent skills
+
+### Issue tracker
+
+本仓库的 Issue 与规格说明使用 GitHub Issues（`pcfprio/HiIOS`，通过 `gh` CLI 操作）。详见 [`docs/agents/issue-tracker.md`](docs/agents/issue-tracker.md)。
+
+### Triage labels
+
+使用五个默认 Triage 角色标签（`needs-triage`、`needs-info`、`ready-for-agent`、`ready-for-human`、`wontfix`）。详见 [`docs/agents/triage-labels.md`](docs/agents/triage-labels.md)。
+
+### Domain docs
+
+采用单上下文（single-context）布局：根目录 `GLOSSARY.md` 与 `docs/adr/`。详见 [`docs/agents/domain.md`](docs/agents/domain.md)。
