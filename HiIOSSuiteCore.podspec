@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
   spec.summary = 'HiIOSSuiteCore module of the reusable HiIOS library.'
   spec.homepage = 'https://github.com/pcfprio/HiIOS'
   spec.license = { :type => 'MIT', :file => 'LICENSE' }
-  spec.author = { 'YangJianxiang' => 'tospery@gmail.com' }
+  spec.author = { 'YangJianxiang' => 'pcfprio@gmail.com' }
   spec.source = { :git => 'https://github.com/pcfprio/HiIOS.git', :tag => spec.version.to_s }
   spec.ios.deployment_target = '17.0'
   spec.swift_version = '6.0'

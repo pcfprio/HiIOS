@@ -11,7 +11,7 @@ HiIOS 同时通过 SwiftPM 与 CocoaPods 分发；新增或升级直接依赖时
 | SwiftyBeaver | 仅在可选 `HiIOSSuiteLogSwiftyBeaver` adapter 使用 |
 | SFSafeSymbols | 仅由 `HiIOS` 便捷入口聚合 |
 | SwiftSoup | 仅用于 `HiIOSGHTrending` 的 HTML parser |
-| URLNavigator-Hi | 当前固定 `2.5.1-v1`，仅由 `HiIOSNavRxSwift` 使用 |
+| URLNavigator | 按 MIT 协议内置源码于 `HiIOSNavRxSwift` 内部，不再作为外部 SPM/Pod 依赖 |
 | FCUUID | 缺少可核对的同版双分发，不进入本库 |
 
 这些是当前产品选择，采用或升级前仍需核对实际分发源和当前平台支持。不为未来可能的 adapter 预装依赖，不把第三方公共类型固化进通用契约。

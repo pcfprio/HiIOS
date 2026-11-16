@@ -2,18 +2,12 @@ import Foundation
 import HiIOSNavCore
 import UIKit
 
-#if canImport(URLNavigator_Hi)
-import URLNavigator_Hi
-#elseif canImport(URLNavigator)
-import URLNavigator
-#endif
-
 public enum URLNavigationError: Error, Equatable, Sendable {
     case disallowedURL
     case unhandledURL
 }
 
-/// URLNavigator 的可选 UIKit 适配器；外部 URL 必须先匹配调用方的允许列表。
+/// 基于内置 URLNavigator 实现的可选 UIKit 适配器；外部 URL 必须先匹配调用方的允许列表。
 @MainActor
 public final class RxURLNavigator {
     private let navigator = Navigator()
@@ -25,10 +19,8 @@ public final class RxURLNavigator {
         makeViewController: @escaping @MainActor (URL) -> UIViewController?
     ) {
         navigator.register(pattern) { convertible, _, _ in
-            guard let url = convertible.urlValue, Thread.isMainThread else { return nil }
-            return MainActor.assumeIsolated {
-                makeViewController(url)
-            }
+            guard let url = convertible.urlValue else { return nil }
+            return makeViewController(url)
         }
     }
 

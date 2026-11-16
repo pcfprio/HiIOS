@@ -44,7 +44,6 @@ let package = Package(
         .package(url: "https://github.com/Moya/Moya.git", exact: "15.0.0"),
         .package(url: "https://github.com/Alamofire/Alamofire.git", exact: "5.12.2"),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", exact: "6.9.0"),
-        .package(url: "https://github.com/tospery/URLNavigator.git", exact: "2.5.1-v1"),
         .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", exact: "2.1.1"),
         .package(url: "https://github.com/SFSafeSymbols/SFSafeSymbols.git", exact: "7.0.0"),
         .package(url: "https://github.com/scinfu/SwiftSoup.git", exact: "2.11.3")
@@ -68,8 +67,7 @@ let package = Package(
         ]),
         .target(name: "HiIOSNavCore", dependencies: ["HiIOSCore"]),
         .target(name: "HiIOSNavRxSwift", dependencies: [
-            "HiIOSNavCore", .product(name: "RxSwift", package: "RxSwift"),
-            .product(name: "URLNavigator", package: "URLNavigator")
+            "HiIOSNavCore", .product(name: "RxSwift", package: "RxSwift")
         ]),
         .target(name: "HiIOSNavCombine", dependencies: ["HiIOSNavCore"]),
         .target(name: "HiIOSStoreCore", dependencies: ["HiIOSBase"]),

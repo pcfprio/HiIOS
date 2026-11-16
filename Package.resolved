@@ -1,5 +1,5 @@
 {
-  "originHash" : "d425651496208c042f43585266be6e3c16cc7bc5611877cbc0f665bc93fe908e",
+  "originHash" : "2bcbf40e25a3a3cd1feb986cd465ecd21f31446cb593476b02bc521a8992c9e4",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -98,15 +98,6 @@
       "state" : {
         "revision" : "8cba041db09596183331d123f337d0eb2e6e8e91",
         "version" : "2.1.1"
-      }
-    },
-    {
-      "identity" : "urlnavigator",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/tospery/URLNavigator.git",
-      "state" : {
-        "revision" : "37c8b10da955b06cf1baf502f250056b7e2e2677",
-        "version" : "2.5.1-v1"
       }
     }
   ],
