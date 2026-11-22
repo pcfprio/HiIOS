@@ -1,6 +1,6 @@
 # HiIOS 智能体协作说明
 
-HiIOS（专名“HiIOS 效率库”，规则与文档叙述使用该专名，仓库名、product、Pod 与代码标识符保持原样）是独立于 AtlasHub 业务的 iOS 效率库，同时提供 Swift Package Manager 与 CocoaPods 分发。修改模块、公开 API、依赖或文档前，先确认工作树状态并保留无关改动；具体产品边界见 [`docs/architecture/products.md`](docs/architecture/products.md)。文档归属与入口见 [`docs/README.md`](docs/README.md)。
+HiIOS（专名“HiIOS 效率库”，规则与文档叙述使用该专名，仓库名、product、Pod 与代码标识符保持原样）是独立于 AtlasHub 业务的 iOS 效率库，同时提供 Swift Package Manager 与 CocoaPods 分发。修改模块、公开 API、依赖或文档前，保留工作区无关改动；具体产品边界见 [`docs/architecture/products.md`](docs/architecture/products.md)。文档归属与入口见 [`docs/README.md`](docs/README.md)。
 
 ## 硬边界
 

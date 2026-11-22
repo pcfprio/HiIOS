@@ -6,7 +6,7 @@
 
 - 将 HiIOS 作为独立 Git 仓库检出在消费仓库的同级目录，以 `.package(path:)` 接入公开 SPM products；不以内嵌 submodule 和 gitlink 作为当前方案。
 - 消费仓库提交版本锁，记录 HiIOS 的公开 HTTPS 地址和 **40 位完整 commit SHA**。分支、tag、CocoaPods 版本、本地 HEAD 或未提交文件不能代替该锁。
-- 优先解析消费仓库同级 `HiIOS/`；linked worktree 可回落到主 worktree 同级目录。非标准绝对路径只改变检出位置，不放宽校验。
+- 优先解析消费仓库同级 `HiIOS/`。非标准绝对路径只改变检出位置，不放宽校验。
 - App 自身的业务 target 只依赖公开 products，不直接引用 `HiIOS/Sources/` 内部路径。
 
 ## 必须接入的硬性门禁
